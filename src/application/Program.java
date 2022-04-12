@@ -14,7 +14,7 @@ public class Program {
 		Scanner sc = new Scanner (System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		// Importar as informaÁıes da reserva
+		// Importar as informa√ß√µes da reserva
 		System.out.print("Room Number: ");
 		int number = sc.nextInt();
 		System.out.print("Check-in Date (dd/MM/yyyy): ");
@@ -22,8 +22,8 @@ public class Program {
 		System.out.print("Check-in Date (dd/MM/yyyy): ");
 		Date checkOut = sdf.parse(sc.next());
 		
-		// Verificar se a data de checkOut È anterior a data de reserva
-		if (!checkOut.after(checkIn)) { // Se a data do checkOut n„o È depois da data do CheckIn, se acontecer, elas sao invalidas
+		// Verificar se a data de checkOut √© anterior a data de reserva
+		if (!checkOut.after(checkIn)) { // Se a data do checkOut n√£o √© depois da data do CheckIn, se acontecer ser√° invalido
 			System.out.println("Error in reservation: Check-out date must be after check-in date");
 		}
 		else{
